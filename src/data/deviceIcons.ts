@@ -1,0 +1,35 @@
+import {
+  Router,
+  Network,
+  Layers,
+  Share2,
+  Wifi,
+  RadioTower,
+  Monitor,
+  Laptop,
+  Server,
+  Smartphone,
+  Printer,
+  Cpu,
+  Shield,
+  Cloud,
+  type LucideIcon,
+} from 'lucide-react';
+import type { DeviceKind } from '../types';
+
+export const DEVICE_ICONS: Record<DeviceKind, LucideIcon> = {
+  router: Router,
+  switch: Network,
+  l3switch: Layers,
+  hub: Share2,
+  accesspoint: Wifi,
+  wifirouter: RadioTower,
+  pc: Monitor,
+  laptop: Laptop,
+  server: Server,
+  phone: Smartphone,
+  printer: Printer,
+  iot: Cpu,
+  firewall: Shield,
+  cloud: Cloud,
+};
